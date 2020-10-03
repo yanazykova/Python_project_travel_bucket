@@ -3,7 +3,7 @@ from models.city import City
 from models.country import Country 
 import repositories.country_repository as country_repository
 
-def save(cities):
+def save(city):
     sql = "INSERT INTO cities (name, country_id) VALUES (%s, %s) RETURNING id"
     values = [city.name, city.country.id]
     results = run_sql(sql, values) 
