@@ -8,11 +8,13 @@
 <section>
     <h3>{{ city.name }}</h3>
     <p>{{city.country.name}}</p>
-    <a href="/cities/{{ city.id }}/edit">Edit</a>
+    <!-- <a href="/cities/{{ city.id }}/edit">Edit</a> -->
+    <form action="/cities/{{ city.id }}/edit" method="POST">
+        <input type="submit" value="Edit">
+    </form>
     <form action="/cities/{{ city.id }}/delete" method="POST">
         <input type="submit" value="Delete">
     </form>
-    <a href="/cities/{{ city.id }}">Details</a>
 </section>
 
 {% endfor %}
