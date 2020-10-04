@@ -53,5 +53,3 @@ def update_city(id):
 def delete_city(id):
     city_repository.delete(id)
     return redirect("/cities")
-
-
