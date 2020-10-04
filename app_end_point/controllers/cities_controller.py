@@ -11,3 +11,8 @@ cities_blueprint = Blueprint("cities", __name__)
 def cities():
     cities = city_repository.select_all()
     return render_template("cities/index.html", cities=cities)
+
+# SHOW??
+
+# NEW
+
