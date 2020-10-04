@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Add a new city</h2>
+
+<form action="/cities" method="POST">
+    <div>
+        <label for="name">City:</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <div>
+        <label for="country">Country:</label>
+        <select name="country_id" id="country">
+            {% for country in countries %}
+            <option value="{{ country.id }}">
+                {{ country.name }}
+            </option>
+            {% endfor %}
+        </select>
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+</form>
+
+{% endblock %}
