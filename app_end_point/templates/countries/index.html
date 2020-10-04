@@ -7,10 +7,10 @@
 
 <section>
     <p>{{ country.name }}</p>
-    <!-- <a href="/countries/{{ country.id }}/edit">Edit</a> -->
-    <form action="/countries/{{ country.id }}/edit" method="POST">
+    <a href="/countries/{{ country.id }}/edit">Edit</a>
+    <!-- <form action="/countries/{{ country.id }}/edit" method="POST">
         <input type="submit" value="Edit">
-    </form>
+    </form> -->
     <form action="/countries/{{ country.id }}/delete" method="POST">
         <input type="submit" value="Delete">
     </form>
