@@ -7,8 +7,8 @@ from models.country import Country
 import repositories.country_repository as country_repository
 
 
-# city_repository.delete_all()
-# country_repository.delete_all()
+city_repository.delete_all()
+country_repository.delete_all()
 
 country_1 = Country("Brazil")
 country_repository.save(country_1)
@@ -19,10 +19,10 @@ country_repository.save(country_2)
 country_3 = Country("Japan")
 country_repository.save(country_3) 
 
-city_1 = City("Rio de Janeiro", country_1)
+city_1 = City("Rio de Janeiro", country_1, True)
 city_repository.save(city_1)
 
-city_2 = City("Sidney", country_2)
+city_2 = City("Sidney", country_2, True)
 city_repository.save(city_2)
 
 city_3 = City("Tokyo", country_3)
