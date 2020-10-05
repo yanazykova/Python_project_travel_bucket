@@ -6,8 +6,9 @@
 {% for city in cities %}
 
 <section>
-    <h3>{{ city.name }}</h3>
+    <h3><a href="cities/{{city.id}}">{{ city.name }}</a></h3>
     <p>{{city.country.name}}</p>
+    <p>{{city.visited}}</p>
     <a href="/cities/{{ city.id }}/edit">Edit</a>
     <!-- <form action="/cities/{{ city.id }}/edit" method="POST">
         <input type="submit" value="Edit">
@@ -21,6 +22,7 @@
         {% else %}
           <i class="fa fa-times fa-2x" aria-hidden="true"></i>
         {% endif %} -->
+        
 </section>
 
 {% endfor %}
