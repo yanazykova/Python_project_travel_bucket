@@ -9,10 +9,10 @@
     <h3><a href="cities/{{city.id}}">{{ city.name }}</a></h3>
     <p>{{city.country.name}}</p>
     <p>{{city.visited}}</p>
-    <a href="/cities/{{ city.id }}/edit">Edit</a>
-    <!-- <form action="/cities/{{ city.id }}/edit" method="POST">
+    <!-- <a href="/cities/{{ city.id }}/edit">Edit</a> -->
+    <form action="/cities/{{ city.id }}/edit" method="GET">
         <input type="submit" value="Edit">
-    </form> -->
+    </form>
     <form action="/cities/{{ city.id }}/delete" method="POST">
         <input type="submit" value="Delete">
     </form>
