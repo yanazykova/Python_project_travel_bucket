@@ -18,6 +18,24 @@
             {% endfor %}
         </select>
     </div>
+
+    <div>
+        <label for="visited">Visited:</label>
+        <select id="visited" name="visited">
+    
+          <option value="true"
+            {% if city.visited == True %} selected="selected" {% endif %}>
+            True
+          </option>
+    
+          <option value="false"
+            {% if city.visited == False %} selected="selected" {% endif %}>
+            False
+          </option>
+    
+        </select>
+      </div>
+
     <div>
         <input type="submit">
     </div>

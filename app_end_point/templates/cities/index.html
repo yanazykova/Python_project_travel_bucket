@@ -15,6 +15,12 @@
     <form action="/cities/{{ city.id }}/delete" method="POST">
         <input type="submit" value="Delete">
     </form>
+
+    <!-- {% if city.visited == True %}
+          <i class="fa fa-check fa-2x" style="color:green" aria-hidden="true"></i>
+        {% else %}
+          <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        {% endif %} -->
 </section>
 
 {% endfor %}
