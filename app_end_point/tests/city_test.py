@@ -16,8 +16,13 @@ class TestCity(unittest.TestCase):
     def setUp(self):
         self.city = City("Moscow", "Russia", False)
 
-    def city_has_name(self):
-        self.assertEqual("Russia", self.name)
+    def test_city_has_name(self):
+        self.assertEqual("Moscow", self.city.name)
+
+    def test_city_has_country(self):
+        self.assertEqual("Russia", self.city.country)
+
+    
 
     
 
