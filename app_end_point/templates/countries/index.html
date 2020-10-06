@@ -1,16 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2>Countries</h2>
+<h2>My Countries:</h2>
 
 {% for country in countries %}
 
 <section>
     <p>{{ country.name }}</p>
-    <a href="/countries/{{ country.id }}/edit">Edit</a>
+    <a href="/countries/{{ country.id }}/edit"><button>Edit</button></a>
     <!-- <form action="/countries/{{ country.id }}/edit" method="POST">
         <input type="submit" value="Edit">
     </form> -->
+    <p></p>
+    <!-- <a href="/countries/{{ country.id }}/delete"><button>Delete</button></a> -->
     <form action="/countries/{{ country.id }}/delete" method="POST">
         <input type="submit" value="Delete">
     </form>

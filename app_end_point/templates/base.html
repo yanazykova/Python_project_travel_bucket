@@ -5,35 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Travel Bucket List</title>
-    <link href="https://fonts.google.com/specimen/Bree+Serif?selection.family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <main class="flex flex--row">
-        <h1>Travel Bucket List</h1>
-        <nav>
-            <ul class="menu">
-                <li><a href="/">Home</a></li>
-                <li>
-                    Cities
+    <div id="grid-container">
+    <header> 
+        <section>
+            <h1><strong>TRAVEL BUCKET</strong></h1>
+            <a href="/">Home</a>
+            <p></p>
+            <p></p>
+            <p></p>
+            <nav class="main--menu">
+                <h1><strong>Countries:</strong></h1>
+                <p></p>
                     <ul>
-                        <li><a href="/cities">All Cities</a></li>
-                        <li><a href="/cities/new">Add Cities</a></li>
+                        <li>
+                            <a href="/countries">My Countries</a>
+                        </li>
+                        <li>
+                            <a href="/countries/new">Add Countries to My List</a>
+                        </li>
                     </ul>
-                </li>
-                <li>
-                    Countries
+                <h1><strong>Cities:</strong></h1>
+                <p></p>
                     <ul>
-                        <li><a href="/countries">All Countries</a></li>
-                        <li><a href="/countries/new">Add Countries</a></li>
+                        <li>
+                            <a href="/cities">My Cities</a>
+                        </li>
+                        <li>
+                            <a href="/cities/new">Add Cities to My List</a>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-        </nav>
-    </main>
-    <section>
-        {% block content %}
-        {% endblock %}
-    </section>
+                </nav>
+            </section>
+        </header>
+        <main id="content">
+            {% block content %}
+            {% endblock %}
+        </main>
+    <footer>
+        <blockquote><span>"Once a year, go <strong>SOMEPLACE</strong> you’ve <strong>NEVER</strong> been before." - Dalai Lama</span></blockquote>
+    </footer>
+</div>
 </body>
 </html>

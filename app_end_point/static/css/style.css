@@ -1,17 +1,104 @@
 body {
     background-size: cover;
     background-image: url("../images/background.jpg");
+    font-family: 'Bree Serif', serif;
     background-repeat: no-repeat;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 0px;
-    margin: 0px;
+    padding: 25px;
+    margin: 25px;
 }
 
-body > main > h1 {
-    color: #d0dce7;
+body > header {
+    grid-area: header;
+}
+
+body > div > header > section > h1 {
+    /* writing-mode: vertical-rl; */
+    text-orientation: upright;
+    color: orangered;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+ul {
+    list-style-image: url('../images/airplane.png');
+}
+
+
+body > main > header > section > a {
+    text-align: right;
+}
+
+
+nav ul li {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: orangered;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
 }
 
 main {
+    grid-area: content;
     padding: 25px;
 }
 
+.main--menu {
+    color: orangered; 
+}
+
+body > footer {
+    color: white;
+    text-align: center;
+  }
+  
+
+  footer {
+    grid-area: footer;
+  }
+
+  footer > blockquote {
+      /* position: absolute; */
+      color: indigo;
+      text-align: right;
+      font-size: 18px;
+  }
+
+  #content {
+    border-left: 1px solid indigo;
+    padding-left: 50px;
+    color: indigo;
+    }
+
+  button {
+    cursor: pointer;
+  }
+
+  h2 {
+    color: orangered; 
+    font-size: 16px;
+  }
+
+  form > div > label {
+      color: orangered;
+  }
+
+  main > section > p {
+      color: orangered;
+  }
+
+  #grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header'
+      'main content'
+      'footer footer';
+    grid-template-columns: 4fr 6fr;
+  }
+
+  blockquote span {
+      background-color: rgb(199, 225, 234) ;
+  }

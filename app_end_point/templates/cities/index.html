@@ -1,13 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2>Cities</h2>
+<h2>My Cities:</h2>
 
 {% for city in cities %}
 
 <section>
-    <h3><a href="cities/{{city.id}}">{{ city.name }}</a></h3>
+    <h3><a>{{ city.name }}</a></h3>
     <p>{{city.country.name}}</p>
+    {% if city.visited == False %}
+      <!-- <i class="fa fa-check fa-2x" style="color:green" aria-hidden="true"></i>    
+    {% else %}
+      <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+    {% endif %} -->
     <p>{{city.visited}}</p>
     <!-- <a href="/cities/{{ city.id }}/edit">Edit</a> -->
     <form action="/cities/{{ city.id }}/edit" method="GET">
@@ -16,13 +21,6 @@
     <form action="/cities/{{ city.id }}/delete" method="POST">
         <input type="submit" value="Delete">
     </form>
-
-    <!-- {% if city.visited == True %}
-          <i class="fa fa-check fa-2x" style="color:green" aria-hidden="true"></i>
-        {% else %}
-          <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-        {% endif %} -->
-        
 </section>
 
 {% endfor %}
