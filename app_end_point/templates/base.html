@@ -9,28 +9,27 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <div id="grid-container">
+    <h1><strong>TRAVEL  BUCKET  LIST</strong></h1>
+<div id="grid-container">
     <header> 
-        <section>
-            <h1><strong>TRAVEL BUCKET</strong></h1>
-            <a href="/">Home</a>
+            <a id="home_link"; href="/">Home</a>
             <p></p>
             <p></p>
             <p></p>
-            <nav class="main--menu">
-                <h1><strong>Countries:</strong></h1>
+            <nav id="menu">                
+                <h1 id="menu-titles"><strong>Countries:</strong></h1>
                 <p></p>
-                    <ul>
-                        <li>
+                    <ul class=list-format>
+                        <li>                            
                             <a href="/countries">My Countries</a>
                         </li>
                         <li>
                             <a href="/countries/new">Add Countries to My List</a>
                         </li>
                     </ul>
-                <h1><strong>Cities:</strong></h1>
+                <h1 id="menu-titles"><strong>Cities:</strong></h1>
                 <p></p>
-                    <ul>
+                    <ul class=list-format>
                         <li>
                             <a href="/cities">My Cities</a>
                         </li>
@@ -39,7 +38,6 @@
                         </li>
                     </ul>
                 </nav>
-            </section>
         </header>
         <main id="content">
             {% block content %}

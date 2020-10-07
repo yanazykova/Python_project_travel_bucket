@@ -8,13 +8,17 @@
 <section>
     <h3><a>{{ city.name }}</a></h3>
     <p>{{city.country.name}}</p>
-    {% if city.visited == False %}
-      <!-- <i class="fa fa-check fa-2x" style="color:green" aria-hidden="true"></i>    
-    {% else %}
-      <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-    {% endif %} -->
-    <p>{{city.visited}}</p>
+    <!-- <p>{{city.visited}}</p> -->
+    <div class="buttons">
+      {% if city.visited == True %}
+        <p>Visited: &#10003</p>    
+      {% else %}
+        <p>Visited: &#10008</p>
+      {% endif %}
+    </div>
+
     <!-- <a href="/cities/{{ city.id }}/edit">Edit</a> -->
+
     <form action="/cities/{{ city.id }}/edit" method="GET">
         <input type="submit" value="Edit">
     </form>

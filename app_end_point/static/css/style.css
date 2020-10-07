@@ -3,20 +3,22 @@ body {
     background-image: url("../images/background.jpg");
     font-family: 'Bree Serif', serif;
     background-repeat: no-repeat;
-    padding: 25px;
-    margin: 25px;
+    padding: 20px;
+    margin: 5px;
 }
 
-body > header {
-    grid-area: header;
-}
-
-body > div > header > section > h1 {
-    /* writing-mode: vertical-rl; */
+body > h1 {
+    text-align: center;
     text-orientation: upright;
     color: orangered;
     font-size: 40px;
     font-weight: bolder;
+    letter-spacing: 4px;
+    word-spacing: 15px;
+}
+
+body > header {
+    grid-area: header;
 }
 
 ul {
@@ -24,8 +26,13 @@ ul {
 }
 
 
-body > main > header > section > a {
-    text-align: right;
+#home_link {
+    color: #f9f1d7; 
+}
+
+#menu-titles {
+    color: orangered;
+    font-size: 18px;
 }
 
 
@@ -46,6 +53,20 @@ main {
     padding: 25px;
 }
 
+.list-format {
+    margin-left: 0; padding-left: 25px;
+}
+
+a {
+    color: blanchedalmond;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+a:hover {
+    color: orange;
+}
+
 .main--menu {
     color: orangered; 
 }
@@ -56,19 +77,19 @@ body > footer {
   }
   
 
-  footer {
+footer {
     grid-area: footer;
   }
 
   footer > blockquote {
       /* position: absolute; */
       color: indigo;
-      text-align: right;
+      text-align: center;
       font-size: 18px;
   }
 
   #content {
-    border-left: 1px solid indigo;
+    border-left: 1px solid white;
     padding-left: 50px;
     color: indigo;
     }
@@ -79,7 +100,7 @@ body > footer {
 
   h2 {
     color: orangered; 
-    font-size: 16px;
+    font-size: 22px;
   }
 
   form > div > label {
@@ -87,16 +108,18 @@ body > footer {
   }
 
   main > section > p {
-      color: orangered;
+      color: whitesmoke;
+      font-size: 20px;
+      text-transform: uppercase;
+      background-color: orange;
   }
 
   #grid-container {
     display: grid;
     grid-template-areas:
-      'header header'
-      'main content'
-      'footer footer';
-    grid-template-columns: 4fr 6fr;
+    'header content'
+    'footer footer';
+    grid-template-columns: 5fr 5fr;
   }
 
   blockquote span {
