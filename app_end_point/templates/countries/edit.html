@@ -3,9 +3,9 @@
 
 <h2>Update a country</h2>
 
-<form action="/countries" method="POST">
+<form action="/countries/{{ country.id }}" method="POST">
     <div>
-        <label for="name">Name:</label>
+        <label for="name">NAME:</label>
         <input type="text" id="name" name="name" value="{{ country.name }}">
     </div>
     <div>

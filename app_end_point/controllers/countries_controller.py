@@ -28,7 +28,7 @@ def create_country():
 
 
 # EDIT
-@countries_blueprint.route("/countries/<id>/edit")
+@countries_blueprint.route("/countries/<id>/edit", methods=['GET'])
 def edit_country(id):
     country = country_repository.select(id)
     return render_template('countries/edit.html', country=country)
@@ -40,6 +40,7 @@ def update_country(id):
     name = request.form["name"]
     country = Country(name, id)
     country_repository.update(country)
+    return redirect('/countries')
 
 
 # DELETE

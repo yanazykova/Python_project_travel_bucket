@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2>My Cities:</h2>
+<h2>MY CITIES:</h2>
 
 {% for city in cities %}
 
@@ -11,9 +11,9 @@
     <!-- <p>{{city.visited}}</p> -->
     <div class="buttons">
       {% if city.visited == True %}
-        <p>Visited: &#10003</p>    
+        <p>VISITED: &#10003</p>    
       {% else %}
-        <p>Visited: &#10008</p>
+        <p>NOT VISITED: &#10008</p>
       {% endif %}
     </div>
 

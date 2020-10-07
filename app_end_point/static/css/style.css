@@ -1,6 +1,7 @@
 body {
     background-size: cover;
     background-image: url("../images/background.jpg");
+    /* opacity: 0.5; */
     font-family: 'Bree Serif', serif;
     background-repeat: no-repeat;
     padding: 20px;
@@ -91,7 +92,7 @@ footer {
   #content {
     border-left: 1px solid white;
     padding-left: 50px;
-    color: indigo;
+    color: red;
     }
 
   button {
@@ -99,12 +100,13 @@ footer {
   }
 
   h2 {
-    color: orangered; 
+    color: orange; 
     font-size: 22px;
   }
 
   form > div > label {
-      color: orangered;
+      color: white;
+      background-color: orange;
   }
 
   main > section > p {
