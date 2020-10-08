@@ -8,7 +8,6 @@
 <section>
     <h3><a>{{ city.name }}</a></h3>
     <p>{{city.country.name}}</p>
-    <!-- <p>{{city.visited}}</p> -->
     <div class="buttons">
       {% if city.visited == True %}
         <p>VISITED: &#10003</p>    
@@ -17,15 +16,14 @@
       {% endif %}
     </div>
 
-    <!-- <a href="/cities/{{ city.id }}/edit">Edit</a> -->
-
     <form action="/cities/{{ city.id }}/edit" method="GET">
-        <input type="submit" value="Edit">
+        <input type="submit" class="floated" value="Edit">
     </form>
     <form action="/cities/{{ city.id }}/delete" method="POST">
-        <input type="submit" value="Delete">
+        <input type="submit" class="floated" value="Delete">
     </form>
 </section>
+
 
 {% endfor %}
 {% endblock %}

@@ -1,7 +1,6 @@
 body {
     background-size: cover;
     background-image: url("../images/background.jpg");
-    /* opacity: 0.5; */
     font-family: 'Bree Serif', serif;
     background-repeat: no-repeat;
     padding: 20px;
@@ -59,7 +58,7 @@ main {
 }
 
 a {
-    color: blanchedalmond;
+    color: rgb(246, 244, 240);
     letter-spacing: 2px;
     word-spacing: 5px;
 }
@@ -82,20 +81,19 @@ footer {
     grid-area: footer;
   }
 
-  footer > blockquote {
-      /* position: absolute; */
+footer > blockquote {
       color: indigo;
       text-align: center;
       font-size: 18px;
   }
 
-  #content {
-    border-left: 1px solid white;
+#content {
+    border-left: 3px solid white;
     padding-left: 50px;
     color: red;
     }
 
-  button {
+button {
     cursor: pointer;
   }
 
@@ -109,14 +107,14 @@ footer {
       background-color: orange;
   }
 
-  main > section > p {
+main > section > p {
       color: whitesmoke;
       font-size: 20px;
       text-transform: uppercase;
       background-color: orange;
   }
 
-  #grid-container {
+#grid-container {
     display: grid;
     grid-template-areas:
     'header content'
@@ -124,6 +122,11 @@ footer {
     grid-template-columns: 5fr 5fr;
   }
 
-  blockquote span {
+blockquote span {
       background-color: rgb(199, 225, 234) ;
   }
+
+.floated {
+    float: left;
+    margin-right: 5px;
+ }
