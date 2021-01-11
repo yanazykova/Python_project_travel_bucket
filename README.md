@@ -7,9 +7,9 @@ RUNNING INSTRUCTIONS FOR THE APP:
 * open the "app_end_point" folder in VS code
 * create database "travel_bucket" (command "createdb travel_bucket" in terminal)
 * in the Terminal run "psql -d travel_bucket -f db/travel_bucket.sql" command in terminal
-* run console.py file
-* check if the database's tables appear in Postico
-* run "flask run" command and follow the http link to open the app in the browser
+* run "python3 console.py"
+* check if the database's tables "cities" and "countries" appear in Postico
+* run "flask run" command in terminal and follow the http link to open the app in the browser
 * Press CTRL+C to quit flask 
 
 
