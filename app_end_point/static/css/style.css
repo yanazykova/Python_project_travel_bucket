@@ -58,13 +58,14 @@ main {
 }
 
 a {
-    color: rgb(246, 244, 240);
+    color: rgb(57, 45, 21);
+    background-color: orange;
     letter-spacing: 2px;
     word-spacing: 5px;
 }
 
 a:hover {
-    color: orange;
+    color: orangered; 
 }
 
 .main--menu {
