@@ -126,6 +126,6 @@ main > section > p {
 blockquote span {
       background-color: whitesmoke;
       border-radius: 12px;
-      margin: 10px;
+      /* margin: 10px; */
   }
 
