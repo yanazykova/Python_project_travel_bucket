@@ -1,6 +1,6 @@
 body {
     background-size: cover;
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/background3.jpg");
     font-family: 'Bree Serif', serif;
     background-repeat: no-repeat;
     padding: 20px;
@@ -58,8 +58,8 @@ main {
 }
 
 a {
-    color: rgb(57, 45, 21);
-    background-color: orange;
+    color: whitesmoke;
+    /* background-color: orange; */
     letter-spacing: 2px;
     word-spacing: 5px;
 }
@@ -73,7 +73,7 @@ a:hover {
 }
 
 body > footer {
-    color: white;
+    color: whitesmoke;
     text-align: center;
   }
   
@@ -89,12 +89,12 @@ footer > blockquote {
   }
 
 #content {
-    border-left: 3px solid white;
+    border-left: 3px solid whitesmoke;
     padding-left: 50px;
     color: red;
     }
 
-button {
+.buttons {
     cursor: pointer;
   }
 
@@ -104,15 +104,15 @@ button {
   }
 
   form > div > label {
-      color: white;
-      background-color: orange;
+      color: whitesmoke;
+      /* background-color: orange; */
   }
 
 main > section > p {
       color: whitesmoke;
       font-size: 20px;
       text-transform: uppercase;
-      background-color: orange;
+      /* background-color: orange; */
   }
 
 #grid-container {
@@ -124,6 +124,8 @@ main > section > p {
   }
 
 blockquote span {
-      background-color: rgb(199, 225, 234) ;
+      background-color: whitesmoke;
+      border-radius: 12px;
+      margin: 10px;
   }
 
